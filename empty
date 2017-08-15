@@ -1,0 +1,20 @@
+#This is a template for the python story
+def begin_story():
+	user_response = 0
+	print("you wake one morning to find your house completely empty, what do you do?")
+	user_response = int(input("1. you call out for your family\n2.you look through the neighborhood\n3. you do nothing and watch tv"))
+	decision1(user_response)
+def decision1(user_response):
+	print("you see that the neughborhood is empty, you're alone")
+	if user_response == 1:
+		print("you cant find your family so you go look through the neighborhood. What do you do next?")
+		user_response = int(input("1.you try calling your friends\n2.you walk to your freinds house\n3.you knock on your neighbors door"))
+		decision2_1(user_response)
+	elif user_response == 2:
+		print("the neighborhood is emty. What do you do next?")
+		user_response = int(input("1.\n2.option two\n3.option three"))
+		decision2_2(user_response)
+	elif user_response == 3:
+		print("User selected 3. What do you do next?")
+		user_response = int(input("1.option one\n2.option two\n3.option three"))
+		decision2_3(user_response)
